@@ -20,10 +20,10 @@ export class AppController {
     return {"foo":"bar","bizz":"buzz"};
   }
 
-  @Get('models')
-  async getModels(): Promise<any> {
-    return await this.appService.getModelsFromDb();
-  }
+  // @Get('models')
+  // async getModels(): Promise<any> {
+  //   return await this.appService.getModelsFromDb();
+  // }
 
   @Get('check')
   checkToken(
