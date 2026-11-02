@@ -1,11 +1,11 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { DataSource } from 'typeorm';
+// import { DataSource } from 'typeorm';
 import { FirebaseService } from './firebase.service';
 
 @Injectable()
 export class AppService {
     constructor(
-        private readonly dataSource: DataSource,
+        // private readonly dataSource: DataSource,
         private readonly firebaseService: FirebaseService,
     ) {}
 
