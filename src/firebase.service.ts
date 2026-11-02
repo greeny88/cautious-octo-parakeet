@@ -8,10 +8,7 @@ export class FirebaseService {
 
   constructor() {
     // TODO: Try this with default credential lookup. Set up fallback for local dev.
-    this.app = initializeApp({
-      credential: applicationDefault(),
-      projectId: process.env.FIREBASE_PROJECT_ID,
-    });
+    this.app = initializeApp();
   }
 
   verifyIdToken(token: string): Promise<DecodedIdToken> {
